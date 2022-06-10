@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pepsi Landing Page</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="./imagens/logo.png" class="logo" alt="Logo da Pepsi, circulo divivido em 3 cores, vermelho em cima, meio braco e embaixo azul"></a>
+            <ul>
+                <li><a href="https://promo.pepsi.com.br/index.aspx#inicio" target="_blank">Home</a></li>
+                <li><a href="https://promo.pepsi.com.br/produtosparticipantes.aspx" target="_blank">Produtos</a></li>
+                <li><a href="https://twitter.com/pepsi" target="_blank">Novidades</a></li>
+                <li><a href="https://exame.com/noticias-sobre/pepsico/" target="_blank">Newsletter</a></li>
+                <li><a href="https://promo.pepsi.com.br/duvidas.aspx" target="_blank" >Contato</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Muuuito mais do que<br><span>" - Pode ser?"</span></h2>
+                <p>A Pepsi tem um gosto mais cítrico, enquanto que a <s>Coca-Cola</s> tem um toque de baunilha e passas que, em linhas gerais, é mais difícil de ser percebido pela maioria dos consumidores. Em teoria, o ácido cítrico faz com que o sabor adocicado da Pepsi se destaque mais, o que torna essa bebida mais forte.</p>
+                <a href="https://promo.pepsi.com.br/produtosparticipantes.aspx" target="_blank">Conheça mais produtos Pepsi</a>
+            </div>
+            <div class="imgBox">
+                <img src="./imagens/pepsi001.png" class="pepsi" alt="Uma lata de refrigerante, com a logo da Pepsi">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="/imagens/pepsi001.png" onclick="imgSlider('./imagens/pepsi001.png'); mudaCorBg('#0062be')"></li>
+            <li><img src="/imagens/pepsi002.png" onclick="imgSlider('./imagens/pepsi002.png'); mudaCorBg('#e60c2c')"></li>
+            <li><img src="/imagens/pepsi003.png" onclick="imgSlider('./imagens/pepsi003.png'); mudaCorBg('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://web.facebook.com/PepsiBrasil?_rdc=1&_rdr" target="_blank"><img src="./imagens/facebook.png"></a></li>
+            <li><a href="https://twitter.com/pepsi" target="_blank"><img src="./imagens/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/pepsibr/" target="_blank"><img src="./imagens/instagram.png"></a></li>
+        </ul>
+        
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector(".pepsi").src = anything;
+        };
+        
+        function mudaCorBg(cor){
+            const sec = document.querySelector(".sec");
+            sec.style.background = cor;
+        }
+        
+    </script>
+
+</body>
+</html>
